@@ -20,9 +20,9 @@ export default [{
             tsconfig: './tsconfig.json',
 }),
         postcss({
-            extensions: ['.css'],
-            modules: true,  // Enable CSS Modules
-            extract: true,  // Extract CSS into a separate file
+            modules: true, // Enable CSS modules
+            extract: true, // Extract the CSS to a separate file
+            use: ['sass'],
         }),
       ],
     external: ['react', 'react-dom'],
