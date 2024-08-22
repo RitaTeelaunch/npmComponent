@@ -1,3 +1,1 @@
-import NameForm from "./componentTest";
-
-export  {NameForm}
+export { default as NameForm } from './NameForm';

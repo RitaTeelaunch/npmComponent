@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NameForm = () => {
+const NameForm: React.FC  = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [isClicked, setIsClicked] = useState(false);

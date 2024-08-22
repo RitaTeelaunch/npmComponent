@@ -20,7 +20,7 @@
   "compilerOptions": {
     "target": "ES5",                          // Specify ECMAScript target version
     "module": "ESNext",                       // Specify module code generation
-    "jsx": "react-jsx",                       // Enable JSX support
+    "jsx": "react",                       // Enable JSX support
     "strict": true,                           // Enable all strict type-checking options
     "esModuleInterop": true,                  // Enables emit interoperability between CommonJS and ES Modules
     "skipLibCheck": true,                     // Skip type checking of declaration files
