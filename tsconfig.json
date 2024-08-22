@@ -18,7 +18,7 @@
 
 {
   "compilerOptions": {
-    "target": "ES5",                          // Specify ECMAScript target version
+    "target": "ES6",                          // Specify ECMAScript target version
     "module": "ESNext",                       // Specify module code generation
     "jsx": "react",                       // Enable JSX support
     "strict": true,                           // Enable all strict type-checking options
@@ -31,7 +31,11 @@
     "outDir": "./dist",                       // Redirect output structure to the directory
     "moduleResolution": "node",               // Specify module resolution strategy
     "allowSyntheticDefaultImports": true,      // Allow default imports from modules with no default export
-    "typeRoots": ["node_modules/@types", "src/@types"]
+    "typeRoots": ["node_modules/@types", "src/@types"],
+    "allowJs": true,
+    "checkJs": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
   },
   "include": [
     "src/**/*",

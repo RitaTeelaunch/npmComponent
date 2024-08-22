@@ -19,11 +19,6 @@ export default [{
         typescript({
             tsconfig: './tsconfig.json',
 }),
-        postcss({
-            modules: true, // Enable CSS modules
-            extract: true, // Extract the CSS to a separate file
-            use: ['sass'],
-        }),
       ],
     external: ['react', 'react-dom'],
 },{
