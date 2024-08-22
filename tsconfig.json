@@ -30,7 +30,8 @@
     "sourceMap": true,                        // Create sourcemaps for .js files
     "outDir": "./dist",                       // Redirect output structure to the directory
     "moduleResolution": "node",               // Specify module resolution strategy
-    "allowSyntheticDefaultImports": true      // Allow default imports from modules with no default export
+    "allowSyntheticDefaultImports": true,      // Allow default imports from modules with no default export
+    "typeRoots": ["node_modules/@types", "src/@types"]
   },
   "include": ["src/**/*"],                    // Include all files in the src directory
   "exclude": ["node_modules", "dist"]         // Exclude node_modules and dist directories
