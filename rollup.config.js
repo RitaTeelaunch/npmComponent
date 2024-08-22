@@ -23,8 +23,6 @@ export default [{
             extensions: ['.css'],
             modules: true,  // Enable CSS Modules
             extract: true,  // Extract CSS into a separate file
-            minimize: true,  // Minify the CSS
-            sourceMap: true,
         }),
       ],
     external: ['react', 'react-dom'],

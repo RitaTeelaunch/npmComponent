@@ -10,4 +10,7 @@ export default defineConfig({
     splitting: false,
     sourcemap: true,
     target: 'esnext',
+    external: [],
+    outDir: 'dist',
+    cssModules: true, // Enable CSS Modules
 });

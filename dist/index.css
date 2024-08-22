@@ -1,20 +1,20 @@
 /* src/component/nameForm/NameForm.module.css */
-.container {
+.NameForm-module__container___ejZB7 {
   margin: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.inputGroup {
+.NameForm-module__inputGroup___F1fEj {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
-.input {
+.NameForm-module__input___oo-oy {
   margin-right: 10px;
   padding: 5px;
 }
-.button {
+.NameForm-module__button___ws4Ne {
   padding: 10px 20px;
   background-color: #e04ee4;
   color: white;
@@ -22,10 +22,10 @@
   border-radius: 15px;
   cursor: pointer;
 }
-.button:hover {
+.NameForm-module__button___ws4Ne:hover {
   background-color: #350229;
 }
-.buttonClicked {
+.NameForm-module__buttonClicked___8Jifl {
   background-color: #680a77;
 }
 /*# sourceMappingURL=index.css.map */
