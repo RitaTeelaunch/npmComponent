@@ -1,6 +1,6 @@
 {
   "name": "@ritabazouny/npm-component-test",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "just a component package",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,5 +24,8 @@
     "@types/react-dom": "^18.3.0",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "rollup": "^4.21.0"
   }
 }
