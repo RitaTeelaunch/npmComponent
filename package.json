@@ -1,0 +1,28 @@
+{
+  "name": "@ritabazouny/npm-component-test",
+  "version": "1.0.2",
+  "description": "just a component package",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/RitaTeelaunch/npmComponent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RitaTeelaunch/npmComponent"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "component",
+  "license": "MIT",
+  "devDependencies": {
+    "@swc/core": "^1.7.14",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}

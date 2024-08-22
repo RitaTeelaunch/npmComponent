@@ -1,0 +1,52 @@
+//{
+//  "compilerOptions": {
+//    "strict": true,
+//    "noImplicitAny": true,
+//    "esModuleInterop": true,
+//    "strictNullChecks": true,
+//    "target": "ES2022",
+//    "moduleResolution": "Node10",
+//    "module": "CommonJS",
+//    "declaration": true,
+//    "isolatedModules": true,
+//    "noEmit": true,
+//    "outDir": "dist"
+//  },
+//  "include": ["src"],
+//  "exclude": ["node_modules"]
+//}
+
+{
+  "compilerOptions": {
+    "target": "ES5",                          // Specify ECMAScript target version
+    "module": "ESNext",                       // Specify module code generation
+    "jsx": "react-jsx",                       // Enable JSX support
+    "strict": true,                           // Enable all strict type-checking options
+    "esModuleInterop": true,                  // Enables emit interoperability between CommonJS and ES Modules
+    "skipLibCheck": true,                     // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "declaration": true,                      // Generate .d.ts files
+    "declarationMap": true,                   // Create sourcemaps for d.ts files
+    "sourceMap": true,                        // Create sourcemaps for .js files
+    "outDir": "./dist",                       // Redirect output structure to the directory
+    "moduleResolution": "node",               // Specify module resolution strategy
+    "allowSyntheticDefaultImports": true      // Allow default imports from modules with no default export
+  },
+  "include": ["src/**/*"],                    // Include all files in the src directory
+  "exclude": ["node_modules", "dist"]         // Exclude node_modules and dist directories
+}
+
+
+//{
+//  "compilerOptions": {
+//    "target": "es6",
+//    "module": "esnext",
+//    "jsx": "react-jsx",
+//    "moduleResolution": "node",
+//    "esModuleInterop": true,
+//    "forceConsistentCasingInFileNames": true,
+//    "skipLibCheck": true,
+//    "strict": true
+//  },
+//  "include": ["src/**/*"]
+//}
