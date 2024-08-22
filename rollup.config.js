@@ -20,13 +20,13 @@ export default [{
             tsconfig: './tsconfig.json',
 }),
         postcss({
-            modules: true, // Enables CSS modules
-            extract: true, // Extracts CSS into a separate file
-            minimize: true,
+            extensions: ['.css'],
+            modules: true,  // Enable CSS Modules
+            extract: true,  // Extract CSS into a separate file
+            minimize: true,  // Minify the CSS
             sourceMap: true,
-            namedExports: true, // Allows you to use named exports for classes
         }),
-    ],
+      ],
     external: ['react', 'react-dom'],
 },{
     input: 'src/index.ts',
