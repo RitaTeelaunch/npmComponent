@@ -33,7 +33,11 @@
     "allowSyntheticDefaultImports": true,      // Allow default imports from modules with no default export
     "typeRoots": ["node_modules/@types", "src/@types"]
   },
-  "include": ["src/**/*"],                    // Include all files in the src directory
+  "include": [
+    "src/**/*",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"],                    // Include all files in the src directory
   "exclude": ["node_modules", "dist"]         // Exclude node_modules and dist directories
 }
 

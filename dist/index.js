@@ -30,12 +30,17 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  NameForm: () => NameForm_default
+  NameForm: () => NameForm_default2
 });
 module.exports = __toCommonJS(src_exports);
 
-// src/NameForm.tsx
+// src/component/nameForm/NameForm.tsx
 var import_react = __toESM(require("react"));
+
+// src/component/nameForm/NameForm.module.css
+var NameForm_default = {};
+
+// src/component/nameForm/NameForm.tsx
 var NameForm = () => {
   const [firstName, setFirstName] = (0, import_react.useState)("");
   const [lastName, setLastName] = (0, import_react.useState)("");
@@ -43,14 +48,14 @@ var NameForm = () => {
   const handleButtonClick = () => {
     setIsClicked(!isClicked);
   };
-  return /* @__PURE__ */ import_react.default.createElement("div", { style: { margin: "20px" } }, /* @__PURE__ */ import_react.default.createElement("div", null, /* @__PURE__ */ import_react.default.createElement(
+  return /* @__PURE__ */ import_react.default.createElement("div", { className: NameForm_default.container }, /* @__PURE__ */ import_react.default.createElement("div", { className: NameForm_default.inputGroup }, /* @__PURE__ */ import_react.default.createElement(
     "input",
     {
       type: "text",
       placeholder: "First Name",
       value: firstName,
       onChange: (e) => setFirstName(e.target.value),
-      style: { marginRight: "10px", padding: "5px" }
+      className: NameForm_default.input
     }
   ), /* @__PURE__ */ import_react.default.createElement(
     "input",
@@ -59,26 +64,18 @@ var NameForm = () => {
       placeholder: "Last Name",
       value: lastName,
       onChange: (e) => setLastName(e.target.value),
-      style: { padding: "5px" }
+      className: NameForm_default.input
     }
   )), /* @__PURE__ */ import_react.default.createElement(
     "button",
     {
-      style: {
-        marginTop: "20px",
-        padding: "10px 20px",
-        backgroundColor: isClicked ? "green" : "blue",
-        color: "white",
-        border: "none",
-        borderRadius: "5px",
-        cursor: "pointer"
-      },
+      className: `${NameForm_default.button} ${isClicked ? NameForm_default.buttonClicked : ""}`,
       onClick: handleButtonClick
     },
     isClicked ? "Clicked!" : "Click Me"
   ));
 };
-var NameForm_default = NameForm;
+var NameForm_default2 = NameForm;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   NameForm

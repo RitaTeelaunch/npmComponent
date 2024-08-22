@@ -1,5 +1,10 @@
-// src/NameForm.tsx
+// src/component/nameForm/NameForm.tsx
 import React, { useState } from "react";
+
+// src/component/nameForm/NameForm.module.css
+var NameForm_default = {};
+
+// src/component/nameForm/NameForm.tsx
 var NameForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -7,14 +12,14 @@ var NameForm = () => {
   const handleButtonClick = () => {
     setIsClicked(!isClicked);
   };
-  return /* @__PURE__ */ React.createElement("div", { style: { margin: "20px" } }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", { className: NameForm_default.container }, /* @__PURE__ */ React.createElement("div", { className: NameForm_default.inputGroup }, /* @__PURE__ */ React.createElement(
     "input",
     {
       type: "text",
       placeholder: "First Name",
       value: firstName,
       onChange: (e) => setFirstName(e.target.value),
-      style: { marginRight: "10px", padding: "5px" }
+      className: NameForm_default.input
     }
   ), /* @__PURE__ */ React.createElement(
     "input",
@@ -23,27 +28,19 @@ var NameForm = () => {
       placeholder: "Last Name",
       value: lastName,
       onChange: (e) => setLastName(e.target.value),
-      style: { padding: "5px" }
+      className: NameForm_default.input
     }
   )), /* @__PURE__ */ React.createElement(
     "button",
     {
-      style: {
-        marginTop: "20px",
-        padding: "10px 20px",
-        backgroundColor: isClicked ? "green" : "blue",
-        color: "white",
-        border: "none",
-        borderRadius: "5px",
-        cursor: "pointer"
-      },
+      className: `${NameForm_default.button} ${isClicked ? NameForm_default.buttonClicked : ""}`,
       onClick: handleButtonClick
     },
     isClicked ? "Clicked!" : "Click Me"
   ));
 };
-var NameForm_default = NameForm;
+var NameForm_default2 = NameForm;
 export {
-  NameForm_default as NameForm
+  NameForm_default2 as NameForm
 };
 //# sourceMappingURL=index.mjs.map

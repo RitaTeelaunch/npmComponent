@@ -1,1 +1,1 @@
-export { default as NameForm } from './NameForm';
+export { default as NameForm } from './component/nameForm/NameForm';
