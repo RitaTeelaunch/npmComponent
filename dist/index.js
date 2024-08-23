@@ -30,17 +30,12 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  NameForm: () => NameForm_default2
+  NameForm: () => NameForm_default
 });
 module.exports = __toCommonJS(src_exports);
 
 // src/component/nameForm/NameForm.tsx
 var import_react = __toESM(require("react"));
-
-// src/component/styles/NameForm.module.css
-var NameForm_default = {};
-
-// src/component/nameForm/NameForm.tsx
 var NameForm = () => {
   const [firstName, setFirstName] = (0, import_react.useState)("");
   const [lastName, setLastName] = (0, import_react.useState)("");
@@ -48,14 +43,14 @@ var NameForm = () => {
   const handleButtonClick = () => {
     setIsClicked(!isClicked);
   };
-  return /* @__PURE__ */ import_react.default.createElement("div", { className: NameForm_default.container }, /* @__PURE__ */ import_react.default.createElement("p", null, " Welcome "), /* @__PURE__ */ import_react.default.createElement("div", { className: NameForm_default.inputGroup }, /* @__PURE__ */ import_react.default.createElement(
+  return /* @__PURE__ */ import_react.default.createElement("div", { className: "container" }, /* @__PURE__ */ import_react.default.createElement("p", null, " Welcome "), /* @__PURE__ */ import_react.default.createElement("div", { className: "inputGroup" }, /* @__PURE__ */ import_react.default.createElement(
     "input",
     {
       type: "text",
       placeholder: "First Name",
       value: firstName,
       onChange: (e) => setFirstName(e.target.value),
-      className: NameForm_default.input
+      className: "input"
     }
   ), /* @__PURE__ */ import_react.default.createElement(
     "input",
@@ -64,18 +59,18 @@ var NameForm = () => {
       placeholder: "Last Name",
       value: lastName,
       onChange: (e) => setLastName(e.target.value),
-      className: NameForm_default.input
+      className: "input"
     }
   )), /* @__PURE__ */ import_react.default.createElement(
     "button",
     {
-      className: `${NameForm_default.button} ${isClicked ? NameForm_default.buttonClicked : ""}`,
+      className: `${"button"} ${isClicked ? "buttonClicked" : ""}`,
       onClick: handleButtonClick
     },
     isClicked ? "Clicked!" : "Click Me"
   ));
 };
-var NameForm_default2 = NameForm;
+var NameForm_default = NameForm;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   NameForm

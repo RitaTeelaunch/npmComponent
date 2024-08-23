@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../styles/NameForm.module.css';
+import '../styles/NameForm.module.css';
 const NameForm: React.FC  = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -10,26 +10,26 @@ const NameForm: React.FC  = () => {
     };
 
     return (
-        <div className={styles.container}>
+        <div className="container">
             <p> Welcome </p>
-            <div className={styles.inputGroup}>
+            <div className="inputGroup">
                 <input
                     type="text"
                     placeholder="First Name"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    className={styles.input}
+                    className="input"
                 />
                 <input
                     type="text"
                     placeholder="Last Name"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
-                    className={styles.input}
+                    className="input"
                 />
             </div>
             <button
-                className={`${styles.button} ${isClicked ? styles.buttonClicked : ''}`}
+                className={`${"button"} ${isClicked ? "buttonClicked" : ''}`}
                 onClick={handleButtonClick}
             >
                 {isClicked ? 'Clicked!' : 'Click Me'}

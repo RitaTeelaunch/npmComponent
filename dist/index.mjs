@@ -1,10 +1,5 @@
 // src/component/nameForm/NameForm.tsx
 import React, { useState } from "react";
-
-// src/component/styles/NameForm.module.css
-var NameForm_default = {};
-
-// src/component/nameForm/NameForm.tsx
 var NameForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -12,14 +7,14 @@ var NameForm = () => {
   const handleButtonClick = () => {
     setIsClicked(!isClicked);
   };
-  return /* @__PURE__ */ React.createElement("div", { className: NameForm_default.container }, /* @__PURE__ */ React.createElement("p", null, " Welcome "), /* @__PURE__ */ React.createElement("div", { className: NameForm_default.inputGroup }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", { className: "container" }, /* @__PURE__ */ React.createElement("p", null, " Welcome "), /* @__PURE__ */ React.createElement("div", { className: "inputGroup" }, /* @__PURE__ */ React.createElement(
     "input",
     {
       type: "text",
       placeholder: "First Name",
       value: firstName,
       onChange: (e) => setFirstName(e.target.value),
-      className: NameForm_default.input
+      className: "input"
     }
   ), /* @__PURE__ */ React.createElement(
     "input",
@@ -28,19 +23,19 @@ var NameForm = () => {
       placeholder: "Last Name",
       value: lastName,
       onChange: (e) => setLastName(e.target.value),
-      className: NameForm_default.input
+      className: "input"
     }
   )), /* @__PURE__ */ React.createElement(
     "button",
     {
-      className: `${NameForm_default.button} ${isClicked ? NameForm_default.buttonClicked : ""}`,
+      className: `${"button"} ${isClicked ? "buttonClicked" : ""}`,
       onClick: handleButtonClick
     },
     isClicked ? "Clicked!" : "Click Me"
   ));
 };
-var NameForm_default2 = NameForm;
+var NameForm_default = NameForm;
 export {
-  NameForm_default2 as NameForm
+  NameForm_default as NameForm
 };
 //# sourceMappingURL=index.mjs.map
