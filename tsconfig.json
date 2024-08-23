@@ -28,7 +28,7 @@
     "declaration": true,                      // Generate .d.ts files
     "declarationMap": true,                   // Create sourcemaps for d.ts files
     "sourceMap": true,                        // Create sourcemaps for .js files
-    "outDir": "./dist",                       // Redirect output structure to the directory
+    "outDir": "dist",                       // Redirect output structure to the directory
     "moduleResolution": "node",               // Specify module resolution strategy
     "allowSyntheticDefaultImports": true,      // Allow default imports from modules with no default export
     "typeRoots": ["node_modules/@types", "src/@types"],
@@ -43,7 +43,7 @@
     "src/**/*.tsx",
     "src/**/*.css",
     "src/**/*.d.ts"],                    // Include all files in the src directory
-  "exclude": ["node_modules", "dist"]         // Exclude node_modules and dist directories
+  "exclude": ["node_modules", "dist", "rollup.config.js"]         // Exclude node_modules and dist directories
 }
 
 
