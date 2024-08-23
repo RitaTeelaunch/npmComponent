@@ -16,7 +16,7 @@
 }
 .button {
   padding: 10px 20px;
-  background-color: #e04ee4;
+  background-color: #e04ee4 !important;
   color: white;
   border: none;
   border-radius: 15px;
@@ -27,5 +27,6 @@
 }
 .buttonClicked {
   background-color: #680a77;
+  !important;
 }
 /*# sourceMappingURL=index.css.map */
