@@ -37,7 +37,7 @@ module.exports = __toCommonJS(src_exports);
 // src/component/nameForm/NameForm.tsx
 var import_react = __toESM(require("react"));
 
-// src/component/nameForm/NameForm.module.css
+// src/component/styles/NameForm.module.css
 var NameForm_default = {};
 
 // src/component/nameForm/NameForm.tsx

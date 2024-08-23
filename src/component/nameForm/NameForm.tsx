@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './NameForm.module.css';
+import styles from '../styles/NameForm.module.css';
 const NameForm: React.FC  = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');

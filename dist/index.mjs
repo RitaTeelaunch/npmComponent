@@ -1,7 +1,7 @@
 // src/component/nameForm/NameForm.tsx
 import React, { useState } from "react";
 
-// src/component/nameForm/NameForm.module.css
+// src/component/styles/NameForm.module.css
 var NameForm_default = {};
 
 // src/component/nameForm/NameForm.tsx
