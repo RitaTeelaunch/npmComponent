@@ -41,6 +41,7 @@
     "src/**/*",
     "src/**/*.ts",
     "src/**/*.tsx",
+    "src/**/*.css",
     "src/**/*.d.ts"],                    // Include all files in the src directory
   "exclude": ["node_modules", "dist"]         // Exclude node_modules and dist directories
 }
