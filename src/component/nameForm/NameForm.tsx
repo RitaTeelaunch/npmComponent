@@ -11,6 +11,7 @@ const NameForm: React.FC  = () => {
 
     return (
         <div className={styles.container}>
+            <p> Welcome </p>
             <div className={styles.inputGroup}>
                 <input
                     type="text"
