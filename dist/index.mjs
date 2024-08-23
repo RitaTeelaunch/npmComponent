@@ -12,7 +12,7 @@ var NameForm = () => {
   const handleButtonClick = () => {
     setIsClicked(!isClicked);
   };
-  return /* @__PURE__ */ React.createElement("div", { className: NameForm_default.container }, /* @__PURE__ */ React.createElement("div", { className: NameForm_default.inputGroup }, /* @__PURE__ */ React.createElement(
+  return /* @__PURE__ */ React.createElement("div", { className: NameForm_default.container }, /* @__PURE__ */ React.createElement("p", null, " Welcome "), /* @__PURE__ */ React.createElement("div", { className: NameForm_default.inputGroup }, /* @__PURE__ */ React.createElement(
     "input",
     {
       type: "text",
