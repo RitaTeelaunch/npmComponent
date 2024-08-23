@@ -23,8 +23,8 @@ export default [{
 }),
         postcss({
             modules: true, // Enable CSS Modules
-            // extract: true, // Extract CSS to a separate file
-            extract: 'dist/index.css', // Extract CSS to a separate file
+            extract: true, // Extract CSS to a separate file
+            // extract: 'dist/index.css', // Extract CSS to a separate file
             minimize: true, // Minify the CSS
             sourceMap: true, // Generate source maps
         }),
