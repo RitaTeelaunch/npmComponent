@@ -3,6 +3,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import dts from 'rollup-plugin-dts';
 import postcss from 'rollup-plugin-postcss';
+import babel from '@rollup/plugin-babel';
+
 
 export default [{
     input: 'src/index.ts',
@@ -25,6 +27,10 @@ export default [{
             extract: 'dist/index.css', // Extract CSS to a separate file
             minimize: true, // Minify the CSS
             sourceMap: true, // Generate source maps
+        }),
+        babel({
+            exclude: 'node_modules/**',
+            babelHelpers: 'bundled',
         }),
       ],
     external: ['react', 'react-dom'],
